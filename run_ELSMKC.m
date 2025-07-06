@@ -59,7 +59,6 @@ for i1 = 1 : length(datasetCandi)
         ELSMKC_result = zeros(nParam, 1, nRepeat, nMeasures);
         ELSMKC_time = zeros(nParam, 1);
      
-        % 核、特征初始化只做一次
         t1_s = tic;
         LKs_cell = Ks_cell;
         [Hs, LKHs] = Ks2Hs(LKs_cell, nCluster);
